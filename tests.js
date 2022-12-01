@@ -34,3 +34,19 @@ describe("sayHello", function (){
         expect(sayHello(false)).toBe("Hello, World!")
     })
 });
+
+    describe("isFive" , function () {
+    it("should return function", function (){
+        expect(typeof isFive).toBe("function")
+    })
+        it("should return bool when 5 is passed ", function () {
+            expect(typeof isFive(2)).toBe("boolean")
+        })
+        it('should return true when passed "5"', function () {
+            expect(isFive("5")).toBe(true)
+        });
+        it('should  return 5', function () {
+            expect(isFive(5)).toBe(true)
+        });
+
+    })
