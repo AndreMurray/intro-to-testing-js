@@ -27,3 +27,21 @@ function isFive(num) {
 function isEven(num) {
     return num % 2 === 0
 }
+
+function isVowel(letter) {
+    let vowelArray = ["a", "i", "o", "e", "u", "A", "I", "O", "E", "U", ];
+    // let lowerCase = letter.toLowerCase();
+
+    for(let i = 0; i < vowelArray.length; i++){
+        if(vowelArray.includes(letter)){
+            return true;
+        } else {
+            return false
+        }
+    }
+    // if(["a", "i", "o", "e", "u"].indexOf(letter.toLowerCase()) === -1) {
+    //     return false
+    // } else {
+    //     return true
+    // }
+}
