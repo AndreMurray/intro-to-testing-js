@@ -50,3 +50,36 @@ describe("sayHello", function (){
         });
 
     })
+
+    describe("isEven", function () {
+        it('should return function', function () {
+            expect(typeof isEven).toBe("function")
+        })
+        it('should return false', function () {
+            expect(typeof isEven(4)).toBe("boolean")
+        });
+        it('should return true if 2 is even', function () {
+            expect( isEven(2)).toBe(true)
+        });
+        it('should return true when execute -4', function () {
+            expect(isEven(-4)).toBe(true)
+        });
+        it('should return false when execute 3', function () {
+            expect(isEven(3)).toBe(false)
+        });
+        it('should return false when called banana', function () {
+            expect(isEven("banana")).toBe(false)
+        });
+        it('should return true when called "8"', function () {
+            expect(isEven("8")).toBe(true)
+        })
+        it('should return false when called Infinity', function () {
+            expect(isEven(Infinity)).toBe(false)
+        });
+        it('should return false when called true or false', function () {
+            expect(isEven(true)).toBe(false)
+        });
+        it('should  return false when empty', function () {
+            expect( isEven()).toBe(false)
+        });
+    })
