@@ -4,7 +4,13 @@ function helloWorld() {
 }
 
 function sayHello(input) {
-    if(input === "Pat") {
-        return "Hello, Pat!"
+    if(input === ""){
+        return input
     }
+    if (input === false) {
+        return "Hello, World!"
+    } else {
+        return `Hello, ${input}!`
+    }
+
 }
